@@ -3,6 +3,7 @@
 In the project directory, you can run:
 
 ##### `git clone https://github.com/nattts/react-object-tree.git`
+cd into react-object-tree
 ##### `npm install`
 ##### `npm start`
 
