@@ -1,0 +1,40 @@
+.modal-main {
+	display: flex;
+	position:fixed;
+	background-color: white;
+	width: 15%;
+	height: 25%;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+}
+
+.wrap {
+	justify-content: space-around;
+	flex-direction: column;
+	display: flex;
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.wrap-inner {
+	display: flex;
+	justify-content: space-between;
+}
+
+.modal-display-block {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width:100%;
+	height: 100%;
+	background: rgba(219, 219, 219, 0.6);
+	display: block;
+}
+
+.modal-display-none {
+	display: none;
+}
+
+
