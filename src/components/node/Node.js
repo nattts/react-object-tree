@@ -20,7 +20,6 @@ const Node = ({ node, children }) => {
     e.preventDefault()
     let topParentId = e.target.closest('div').id
     let arrayPropertyName = e.target.parentNode.parentNode.getAttribute("data-propname")
-    // methodMap[arrayPropertyName]({ nodeName, topParentId, nodeId, arrayPropertyName })
     methodMap[arrayPropertyName]({ nodeName, topParentId, nodeId })
   }
 

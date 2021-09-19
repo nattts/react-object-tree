@@ -20,7 +20,7 @@ function getChildrenPropName(node) {
 const generateRandomStr = () => Math.random().toString(20).substring(2)
 
 
-const deleteProduct = (state, topParentId,  nodeName, nodeId, arrayPropertyName) => {
+const deleteProduct = (state, topParentId,  nodeName, nodeId ) => {
   let category = state.categories.find(x => x.id === topParentId)
   for(let brand of category.brands) {
     for(let product of brand.products) {
@@ -33,7 +33,7 @@ const deleteProduct = (state, topParentId,  nodeName, nodeId, arrayPropertyName)
   }
 }
 
-const deleteBrand = (state, topParentId,  nodeName, nodeId, arrayPropertyName) => {
+const deleteBrand = (state, topParentId,  nodeName, nodeId ) => {
   let category = state.categories.find(x => x.id === topParentId)
   for(let brand of category.brands) {
       if(brand.id === nodeId && brand.name === nodeName) {
@@ -43,7 +43,7 @@ const deleteBrand = (state, topParentId,  nodeName, nodeId, arrayPropertyName) =
   }
 }
 
-const deleteCategory = (state, topParentId,  nodeName, nodeId, arrayPropertyName) => {
+const deleteCategory = (state, topParentId,  nodeName, nodeId ) => {
   let category = state.categories.find(x => x.id === topParentId)
   if(category.id === nodeId && category.name === nodeName) {
     state.categories = state.categories.filter(x => x.id !== nodeId && x.name !== nodeName)
